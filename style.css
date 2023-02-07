@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+ul {
+  list-style: none;  
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background website */
+.background-blur-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(80px);
+}
+/* background website */
+
+/* calculator body */
+.calculator-body {
+  position: absolute;
+  width: 450px;
+  height: 650px;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, rgba(176, 195, 211, 0.6), rgba(102, 134, 204, 0.6));
+  padding: 20px;
+  /* box-shadow: 3px 3px 10px ; */
+}
+/* calculator body */
+
+/* display calculator */
+.display {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  padding-right: 10px;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.15),
+  inset 3px 3px 5px rgba(0, 0, 0, 0.15);
+  text-align: right;
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.display:focus {
+  outline: none;
+}
+/* display calculator */
+
+/* button global */
+button {
+  width: 87.5px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 1.25em;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+/* button global */
+
+/* C and CE */
+.c-and-ce {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.list-c-and-ce {
+  display: flex;
+  gap: 20px;
+}
+
+.c-and-ce button {
+  background: rgba(247, 175, 175, 0.6);
+}
+
+.c-and-ce button:hover {
+  background: rgba(247, 175, 175, 0.9);
+}
+
+.c-and-ce button:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+/* C and CE */
+
+/* complex numbers */
+.complex-numbers {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.list-complex-numbers {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.complex-numbers li {
+  width: 100%;
+}
+
+.complex-numbers button {
+  background: rgba(185, 233, 193, 0.6);
+}
+
+.complex-numbers button:hover {
+  background: rgba(185, 233, 193, 0.9);
+}
+
+.complex-numbers button:active {
+  background: rgba(185, 233, 193, 0.1);
+}
+/* complex numbers */
+
+/* numbers and operations */
+.numbers-operations {
+  display: flex;
+}
+
+/* normal numbers */
+.normal-numbers {
+  margin-top: 20px;
+  height: 320px;
+  width: 302.5px;
+}
+
+.list-normal-numbers {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.normal-numbers button {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.normal-numbers button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.normal-numbers button:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list-normal-numbers li:last-child button {
+  background: rgba(209, 141, 248, 0.6);
+}
+
+.list-normal-numbers li:last-child button:hover {
+  background: rgba(209, 141, 248, 0.9);
+}
+
+.list-normal-numbers li:last-child button:active {
+  background: rgba(209, 141, 248, 0.1);
+}
+/* normal numbers */
+
+/* operations */
+.operations {
+  width: 87.5px;
+  height: 320px;
+  margin: 20px 0 0 20px;
+}
+
+.list-operations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.operations button {
+  background: rgba(243, 250, 145, 0.6);
+}
+
+.operations button:hover {
+  background: rgba(243, 250, 145, 0.9);
+}
+
+.operations button:active {
+  background: rgba(243, 250, 145, 0.1);
+}
+/* operations */
+/* numbers and operations */
